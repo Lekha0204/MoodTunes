@@ -24,7 +24,7 @@ PersonalAIs is an intelligent music recommendation assistant, integrating Spotif
 
 *   Python >= 3.12
 *   [uv](https://docs.astral.sh/uv/) (recommended for package management)
-*   Spotify Premium Account (for playback control)
+*   Spotify (if possible Premium Account for playback control)
 
 ### Installation
 
@@ -43,7 +43,6 @@ PersonalAIs is an intelligent music recommendation assistant, integrating Spotif
     
     You will need:
     *   **Spotify API Keys**: `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REDIRECT_URI` (from [Spotify Developer Dashboard](https://developer.spotify.com/dashboard))
-    *   **LLM API Key**: `DASHSCOPE_API_KEY` (or others if configured)
     *   **Last.fm API Keys**: `LASTFM_API_KEY`, `LASTFM_API_SECRET` (optional, for Last.fm features)
 
 ### Running the Application
@@ -62,22 +61,4 @@ Or using an MCP client configured with `mcp_servers_config.yaml`.
 *   `tests/`: Unit tests.
 *   `BLOG/`: Development logs and additional docs.
 
-I have commented out the features that require Spotify Premium. Specifically, I disabled the following tools in src/mcp_server.py:
 
-play_track
-play_playlist
-pause_playback
-resume_playback
-skip_to_next
-skip_to_previous
-
-You can still use the "free" features like:
-
-search_tracks
-get_user_profile
-get_user_playlists
-get_recently_played
-get_top_tracks
-create_playlist
-add_tracks_to_playlist
----
