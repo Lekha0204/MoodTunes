@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalAIs - Music Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-brands fa-spotify"></i>
+                <span>PersonalAIs</span>
+            </div>
+            
+            <div class="user-profile" id="user-profile">
+                <!-- User info will be loaded here -->
+            </div>
+
+            <div class="nav-section">
+                <h3>Library</h3>
+                <ul id="playlist-list">
+                    <!-- Playlists will be loaded here -->
+                    <li><i class="fa-solid fa-spinner fa-spin"></i> Loading playlists...</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Chat Interface -->
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Assistant</h2>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message system">
+                        <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                        <div class="bubble">
+                            Hello! I'm your AI music assistant. Ask me to recommend songs, create playlists, or chat about music!
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+                    <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Player Bar (Right or Bottom) -->
+        <aside class="player-sidebar">
+            <h3>Now Playing</h3>
+            <div class="now-playing-card" id="now-playing">
+                <div class="album-art placeholders">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <div class="track-info">
+                    <div class="track-name">Not Playing</div>
+                    <div class="artist-name">-</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0%"></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
