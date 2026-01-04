@@ -1,8 +1,8 @@
-# 🎵 PersonalAIs (Python Edition) 🤖
+# 🎵 MoodTunes 🤖
 
 **Your Personal Music Assistant based on Spotify and LLM.**
 
-PersonalAIs is an intelligent music recommendation assistant, integrating Spotify API and AI conversation systems. It operates as an MCP (Model Context Protocol) server.
+MoodTunes is an intelligent music recommendation assistant, integrating Spotify API and AI conversation systems. It operates as an MCP (Model Context Protocol) server.
 
 ## 🚀 Key Features
 
