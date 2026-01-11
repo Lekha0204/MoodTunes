@@ -53,12 +53,7 @@ You can run the MCP server directly using Python:
 uv run python src/main.py
 ```
 
-Or using an MCP client configured with `mcp_servers_config.yaml`.
 
-## 📂 Project Structure
 
-*   `src/`: Source code for the MCP server and logic.
-*   `tests/`: Unit tests.
-*   `BLOG/`: Development logs and additional docs.
 
 
